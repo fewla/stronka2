@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+       <title>PROJEKT okolice gorlice 2</title>
+       <script>
+        alert("ciesze sie że wpadłeś");
+       </script>
+      <style>
+         #linkgorlice:hover {
+            color: red;
+         }
+            
+         
+     #obraz2:hover {
+      filter: brightness(120%);
+     }
+ 
+         #linkgorlice {
+
+             font-size: 30px;
+             position: absolute; 
+        top: 90px; 
+        left: 50px; 
+             color: rgb(0, 0, 0); 
+             text-decoration: none; 
+         }
+
+         #obraz1 {
+            position: absolute; 
+        top: 300px; 
+        left: 300px; 
+         }
+
+         #obraz1:hover {
+            filter: brightness(120%);
+         }
+       
+
+         #Glowna {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none; 
+        }
+        #Glowna:hover {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+
+        #okolice {
+            position: absolute;
+            top: 25px;
+            left: 130px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+
+        #okolice:hover {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+
+        #audio {
+            position: absolute;
+            top: 25px;
+            left: 300px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+        
+        #audio:hover {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+        #kalku {
+            position: absolute;
+            top: 25px;
+            left: 500px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+        #kalku:hover {
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+        canvas {
+            border: 0px solid #000;
+        }
+
+        #obraz2 {
+         position: absolute; 
+        top: 300px; 
+        left: 750px; 
+        }
+
+        #obraz3 {
+         position: absolute; 
+        top: 300px; 
+        left: 1200px; 
+        }
+   
+        #obraz3:hover {
+         filter: brightness(120%);
+        }
+
+        #tekst3 {
+         position: absolute;
+         top: 230px;
+         left: 1200px;
+         color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+
+        #tekst2 {
+         position: absolute;
+         top: 250px;
+         left: 750px;
+         color: rgb(0, 0, 0); 
+             text-decoration: none;
+
+        }
+
+        #tekst1 {
+         position: absolute;
+         top: 250px;
+         left: 300px;
+         color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+        #tekst1:hover {
+         color: rgb(18, 185, 18);
+        }
+
+       #tekst2:hover {
+         color: rgb(20, 202, 35);
+       }
+
+       #tekst3:hover {
+         color: rgb(25, 173, 104);
+       }
+         
+       </style>
+    </head>
+
+    <body style="background-color: rgb(240, 237, 233);">
+
+      <a id="Glowna" href="file:///C:/Users/Franiu/Desktop/strony/projekt%20html.html">Główna</a>
+<a id="okolice" href="file:///C:/Users/Franiu/Desktop/strony/projekt%20strona%202.html">Atrakcje i zabytki</a>
+ <a id="audio" href="https://www.youtube.com/watch?v=I1uOp-e03rw&pp=ygUca3VycyBweXRob25hIHcgZ29kemluZSBsZXd1cw%3D%3D">Python audio źródło</a>
+<a id="kalku" href="file:///C:/Users/Franiu/Desktop/strony/kalkulator%20html.html">Prosty kalkulator</a>
+
+<canvas id="mojCanvas"  width="1910" height="60" style="border-color: rgb(240, 237, 233);">
+</canvas>
+
+<script>
+    var canvas = document.getElementById("mojCanvas");
+    var context = canvas.getContext("2d");
+   
+   
+    
+    context.fillStyle = "LightBlue";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.beginPath();
+    context.strokeStyle = "rgba(0, 0, 0)";
+    context.moveTo(0, 50); // Początkowe współrzędne (x, y)
+context.lineTo(canvas.width, 50); // Końcowe współrzędne (x, y)
+context.stroke()
+
+</script>
+
+   </a>
+<a id="tekst3" href="https://karpating.pl/65-karpating-bazylika-mniejsza-pw-narodzenia-nmp">Neorenesansowa Bazylika Mniejsza NMP projektu M.F Pavoniego z ołtarzem Marconiego i obrazem Jana Styki</a>
+<a id="tekst2" href="http://www.pttkgorlice.pl/muzeum/o-muzeum/">Muzeum Regionalne PTTK im. Ignacego Łukasiewicza</a>
+<a id="tekst1" href="https://visitmalopolska.pl/obiekt/-/poi/ratusz-w-gorlicach">Ratusz Miejski na Rynku</a>
+
+   <a id="linkgorlice" href="https://www.gorlice.pl/pl/298/0/atrakcje-i-zabytki-gorlic.html">Link do strony z której zostały wzięte zdjęcia </a>
+
+   <img  id="obraz1" src="https://www.gorlice.pl/files/images/_IMG4914.jpg" width="400" height="300">
+   <img id="obraz2" src="https://www.gorlice.pl/files/images/alembik.jpg" width="400" height="300">
+   <img id="obraz3" src="https://www.gorlice.pl/files/images/Bazylika%20Mniejsza%20Gorlicach-%20MG%282%29.jpg" width="400" height="300">
+
+    </body>
+
+
+
+    

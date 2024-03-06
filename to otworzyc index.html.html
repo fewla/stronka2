@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+    
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+       <title>PROJEKT okolice gorlice 2</title>
+       <script>
+        alert("siema");
+       </script>
+
+<style>
+   
+    #przemieszczanyObraz {
+        position: absolute; 
+        top: 300px; 
+        right: 800px; 
+        transition: filter 0.3s;
+
+    
+    }
+
+
+    #przemieszczanyObraz:hover {
+            filter: brightness(120%); 
+        }
+
+    #powiekszonyTekst {
+        position: absolute;
+            font-size: 40px; 
+            margin-left: 800px; 
+            margin-top: 130px; 
+            color: rgb(0, 0, 0); 
+    }
+
+    #kolortekstu {
+        font-size: 20px;
+        margin-top: 200px;
+        color:blueviolet
+        
+    }
+
+    canvas {
+            border: 0px solid #000;
+        }
+
+        #ludzikTekst {
+            font-size: 30px;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+
+        #Glowna {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none; 
+        }
+        #Glowna:hover {
+            color: rgb(25, 0, 255);
+            text-decoration: underline;
+        }
+
+        #okolice {
+            position: absolute;
+            top: 25px;
+            left: 130px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+
+        #okolice:hover {
+            color: rgb(25, 0, 255);
+            text-decoration: underline;
+        }
+
+        #audio {
+            position: absolute;
+            top: 25px;
+            left: 300px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+        
+        #audio:hover {
+            color: rgb(25, 0, 255);
+            text-decoration: underline;
+        }
+        #kalku {
+            position: absolute;
+            top: 25px;
+            left: 500px;
+            font-size: 20px;
+            color: rgb(0, 0, 0); 
+             text-decoration: none;
+        }
+        #kalku:hover {
+            color: rgb(25, 0, 255);
+            text-decoration: underline;
+        }
+   
+</style>
+    </head>
+
+
+    <body style="background-color: rgb(240, 237, 233);">
+
+       
+ 
+<a id="Glowna" href="file:///C:/Users/Franiu/Desktop/strony/projekt%20html.html">Główna</a>
+<a id="okolice" href="file:///C:/Users/Franiu/Desktop/strony/projekt%20strona%202.html">Atrakcje i zabytki</a>
+ <a id="audio" href="https://www.youtube.com/watch?v=I1uOp-e03rw&pp=ygUca3VycyBweXRob25hIHcgZ29kemluZSBsZXd1cw%3D%3D">Python audio źródło</a>
+<a id="kalku" href="file:///C:/Users/Franiu/Desktop/strony/kalkulator%20html.html">Prosty kalkulator</a>
+
+
+        <canvas id="mojCanvas" width="1900" height="100" style="border-color: rgb(240, 237, 233);">
+        </canvas>
+
+        <script>
+            var canvas = document.getElementById("mojCanvas");
+            var context = canvas.getContext("2d");
+           
+           
+            
+
+            context.beginPath();
+            context.strokeStyle = "rgba(0, 0, 0)";
+            context.moveTo(0, 50); // Początkowe współrzędne (x, y)
+    context.lineTo(canvas.width, 50); // Końcowe współrzędne (x, y)
+    context.stroke()
+
+        </script>
+
+<p id="powiekszonyTekst">Okolice Gorlic</p>
+        <a href="file:///C:/Users/Franiu/Desktop/strony/projekt%20strona%202.html">
+            <img id="przemieszczanyObraz" src="https://www.gorlice.pl/files/images/Rynek%20i%20zabytkowe%20kamieniczkia%20-%20MG%281%29.jpg" width="450" height="350">
+            
+        </a>
+
+        <h1 id="kolortekstu">Kurs pythona w godzine xd</h1>
+
+        <audio controls>
+            <source src="kurs podstaw Pythona w godzinę.mp3" type="audio/mp3">
+            
+        </audio>
+
+        
+       <p id="ludzikTekst"> jakiś ludzik </p>
+
+       <canvas id="myCanvas" width="200" height="300"></canvas>
+       <script>
+
+        
+       </script>
+
+       
+        
+
+        
+        <script>
+            // Uzyskanie dostępu do elementu canvas i jego kontekstu rysowania
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+    
+            // Rysowanie głowy (koło)
+            context.beginPath();
+            context.arc(100, 50, 30, 0, 2 * Math.PI);
+            context.stroke();
+    
+            // Rysowanie ciała (linia pionowa)
+            context.beginPath();
+            context.moveTo(100, 80);
+            context.lineTo(100, 150);
+            context.stroke();
+    
+            // Rysowanie rąk (linie ukośne)
+            context.beginPath();
+            context.moveTo(100, 90);
+            context.lineTo(60, 120);
+            context.stroke();
+    
+            context.beginPath();
+            context.moveTo(100, 90);
+            context.lineTo(140, 120);
+            context.stroke();
+    
+            // Rysowanie nóg (linie ukośne)
+            context.beginPath();
+            context.moveTo(100, 150);
+            context.lineTo(60, 190);
+            context.stroke();
+    
+            context.beginPath();
+            context.moveTo(100, 150);
+            context.lineTo(140, 190);
+            context.stroke();
+        </script>
+     
+    </body>
+    </html>
